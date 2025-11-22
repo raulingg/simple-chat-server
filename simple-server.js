@@ -1,5 +1,6 @@
 import net from 'node:net'
 
+const PORT = 4000
 const activeConnections = new Map()
 let username = ''
 
@@ -53,6 +54,6 @@ function parseUsername(data) {
   return data.replace('_username_', '')
 }
 
-server.listen(3099, '127.0.0.1', () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log('server listening on', server.address());
 })
