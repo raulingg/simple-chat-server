@@ -3,9 +3,10 @@ import net from 'node:net'
 import readline from 'node:readline/promises'
 import process from 'node:process'
 
+const PORT = 4000
 let username = ''
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-const socket = net.createConnection({ host: '127.0.0.1', port: 3099 })
+const socket = net.createConnection({ host: '127.0.0.1', port: PORT })
   .on('connect', async () => {
     await authUsername()
 
