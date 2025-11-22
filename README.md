@@ -32,10 +32,20 @@ Supports multiple simultaneous connections, message broadcasting, and a simple t
 
 ---
 
-## Prerequisites
+## 📁 Project Structure
 
-- **Node.js** (version 20+ should work fine)  
-- A terminal to run the client and server scripts
+simple-chat-server/
+│
+├── simple-server.js # TCP chat server
+└── simple-sender.js # Simple terminal client
+
+---
+
+## 🛠️ Requirements
+
+- **Node.js 20+**  
+- Terminal for client connections  
+- TCP port open (default is 4000 unless modified)
 
 ---
 
