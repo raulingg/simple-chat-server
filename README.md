@@ -34,10 +34,12 @@ Supports multiple simultaneous connections, message broadcasting, and a simple t
 
 ## 📁 Project Structure
 
+```
 simple-chat-server/
 │
 ├── simple-server.js # TCP chat server
 └── simple-sender.js # Simple terminal client
+```
 
 ---
 
