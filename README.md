@@ -104,17 +104,20 @@ Once connected, you can type messages in your terminal. They'll be sent to the s
 
 ## 🧩 Architecture Diagram
 
+```
         ┌─────────────────────────┐
         │      Chat Server        │
         │     (simple-server)     │
         └──────────┬──────────────┘
                    │ broadcasts
        ┌───────────┼──────────────┐
-       │           │               │
+       │           │              │
 ┌───────────┐ ┌───────────┐ ┌───────────┐
 │  Client 1 │ │ Client 2  │ │ Client 3  │
 │ sender.js │ │ sender.js │ │ sender.js │
 └───────────┘ └───────────┘ └───────────┘
+
+```
 
 ---
 
